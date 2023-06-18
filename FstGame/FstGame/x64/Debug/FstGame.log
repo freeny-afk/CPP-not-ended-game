@@ -1,0 +1,6 @@
+﻿  Window.cpp
+C:\Users\artem\source\repos\FstGame\FstGame\Window.cpp(75,24): warning C4305: аргумент: усечение из "double" в "float"
+C:\Users\artem\source\repos\FstGame\FstGame\Window.cpp(78,25): warning C4305: аргумент: усечение из "double" в "float"
+C:\Users\artem\source\repos\FstGame\FstGame\Window.cpp(81,24): warning C4305: аргумент: усечение из "double" в "float"
+C:\Users\artem\source\repos\FstGame\FstGame\Window.cpp(84,25): warning C4305: аргумент: усечение из "double" в "float"
+  FstGame.vcxproj -> C:\Users\artem\source\repos\FstGame\x64\Debug\FstGame.exe

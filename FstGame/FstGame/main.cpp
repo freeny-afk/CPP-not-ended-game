@@ -3,17 +3,19 @@
 int main() {
 	GMWindow GameWindow;
 	GameWindow.initHero();
-	GameWindow.initBck();
 	//Game loop
+	GameWindow.setLocation();
+	GameWindow.initBck();
 	while (GameWindow.isRunning()) 
 	{
-		GameWindow.initEnemies();
+
 		//Window update
 		GameWindow.update();
 		//Window render
 		GameWindow.render();
+
 	}
 
-
+	GameWindow.initBck();
 	return 0;
 }

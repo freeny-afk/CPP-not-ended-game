@@ -14,6 +14,9 @@
 class GMWindow
 {
 private:
+	const int lvl1heightMap = 1; //размер карты высота
+	const int lvl1widthMap = 5; //размер карты ширина 
+	std::vector<std::string> mapMap;
 	sf::VideoMode videoMode;
 	sf::RenderWindow *GameWindow;
 	sf::Event ev;
@@ -31,15 +34,47 @@ private:
 	sf::Sprite bckSprite;
 	// Declare and load a texture
 	sf::Texture bckTexture;
+
+	// Create a sprite
+	sf::Sprite waterSprite;
+	// Declare and load a texture
+	sf::Texture waterTexture;
+
+	// Create a sprite
+	sf::Sprite rocksBackSprite;
+	// Declare and load a texture
+	sf::Texture rocksBackTexture;
+
+	// Create a sprite
+	sf::Sprite rocksFrontSprite;
+	// Declare and load a texture
+	sf::Texture rocksFrontTexture;
+
+	// Create a sprite
+	sf::Sprite tileCaveSprite;
+	// Declare and load a texture
+	sf::Texture tileCaveTexture;
+
+
+
 	// Derlaring clock
 	sf::Clock clock;
 	float currentFrame = 0;
 	float time;
 public:
 	GMWindow();
+
+	void wtrBlock();
+	void rocksBack();
+	void rocksFront();
+	void tileCave();
+
+
+
+
+
 	void gameTime();
 	void whatKey();
-	void initEnemies();
 	void initWindow();
 	void initHero();
 	void initBck();
@@ -48,9 +83,11 @@ public:
 	bool isRunning();
 	void updateEv();
 	void updateMousePos();
+
 	void update();
-	void heroCh();
 	void render();
+
+	void setLocation();
 	~GMWindow();
 };
 
